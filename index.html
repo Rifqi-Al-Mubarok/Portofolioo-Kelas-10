@@ -1,27 +1,46 @@
+<!-- Menentukan tipe dokumen sebagai HTML5 -->
 <!DOCTYPE html>
+<!-- Element root (akar) dari halaman web, dengan atribut lang="id" untuk bahasa Indonesia -->
 <html lang="id">
 <head>
+    <!-- Metadata character set UTF-8 untuk mendukung berbagai karakter teks -->
     <meta charset="UTF-8">
+    <!-- Metadata viewport agar website responsif di perangkat mobile (skala awal 1.0) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman yang akan muncul di tab browser -->
     <title>Portofolio Saya | Web Developer</title>
+    <!-- Menghubungkan file HTML dengan file CSS eksternal (style.css) untuk styling -->
     <link rel="stylesheet" href="style.css">
+    <!-- Preconnect ke server Google Fonts untuk mempercepat pemuatan font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Mengimpor font 'Poppins' dari Google Fonts dengan berbagai ketebalan (300, 400, 600, 700) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Mengimpor library ikon Font Awesome untuk menampilkan ikon-ikon sosial media dan lainnya -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation / Header Section -->
+    <!-- Bagian header berisi logo dan navigasi menu -->
     <header>
         <div class="container">
-            <a href="#" class="logo">Porto<span>folio.</span></a>
+            <!-- Logo website, mengarah ke atas halaman (#) -->
+            <a href="#" class="logo">Qi<span>El.</span></a>
+            
+            <!-- Checkbox hack untuk menu responsif (hamburger menu) tanpa JavaScript -->
+            <!-- Input checkbox ini disembunyikan, tapi status checked-nya digunakan di CSS untuk menampilkan menu -->
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            
+            <!-- Label untuk checkbox, berfungsi sebagai tombol hamburger menu -->
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
             </label>
+            
+            <!-- Navigasi utama berisi daftar link ke bagian-bagian halaman -->
             <nav>
                 <ul>
+                    <!-- Link navigasi menggunakan anchor link (#id) untuk scroll ke bagian tertentu -->
                     <li><a href="#hero">Beranda</a></li>
                     <li><a href="#about">Tentang</a></li>
                     <li><a href="#projects">Proyek</a></li>
@@ -32,22 +51,30 @@
     </header>
 
     <!-- Hero Section -->
+    <!-- Bagian Hero adalah tampilan pertama yang dilihat pengguna (banner utama) -->
     <section id="hero">
         <div class="container hero-content">
             <div class="hero-text">
                 <h3>Halo, saya</h3>
                 <h1>Rifqi Al Mubarok</h1>
+                <!-- Paragraf deskripsi singkat -->
                 <!-- <p>Membangun pengalaman web yang modern, responsif, dan menakjubkan tanpa batas.</p> -->
                 <p>################################</p>
+                
+                <!-- Tautan sosial media menggunakan ikon Font Awesome -->
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Rifqi-Al-Mubarok" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rrifk.ii/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rifqi-al-mubarok/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
+                
+                <!-- Tombol Call to Action (CTA) yang mengarah ke bagian Projects -->
                 <a href="#projects" class="btn">Lihat Karya Saya</a>
             </div>
+            
+            <!-- Bagian gambar di Hero section -->
             <div class="hero-img">
-                <!-- Placeholder for user image or illustration -->
+                <!-- Placeholder untuk gambar pengguna atau ilustrasi -->
                 <div class="img-box">
                     <i class="fas fa-code"></i>
                 </div>
@@ -56,19 +83,23 @@
     </section>
 
     <!-- About Section -->
+    <!-- Bagian Tentang Saya -->
     <section id="about">
         <div class="container">
             <h2 class="section-title">Tentang Saya</h2>
             <div class="about-content">
                 <div class="about-text">
+                    <!-- Deskripsi diri -->
                     <!-- <p>Saya adalah seorang pengembang web yang bersemangat dalam menciptakan tampilan antarmuka yang menarik dan fungsional. Dengan fokus pada desain yang bersih dan kode yang efisien, saya berusaha memberikan pengalaman pengguna terbaik.</p> -->
                     <p>#############################################
                     #########################################</p>
+                    
+                    <!-- Daftar keahlian/skills -->
                     <div class="skills">
-                        <div class="skill-item">HTML5</div>
-                        <div class="skill-item">CSS3</div>
-                        <div class="skill-item">Responsive Design</div>
-                        <div class="skill-item">UI/UX</div>
+                        <a href="https://id.wikipedia.org/wiki/HTML" target="_blank"class="skill-item">HTML5</a>
+                        <a href="https://id.wikipedia.org/wiki/CSS" target="_blank"class="skill-item">CSS3</a>
+                        <a href="https://id.wikipedia.org/wiki/Desain_web_responsif" target="_blank"class="skill-item">Responsive Design</a>
+                        <a href="https://id.wikipedia.org/wiki/UI/UX" target="_blank"class="skill-item">UI/UX</a>
                     </div>
                 </div>
             </div>
@@ -76,6 +107,7 @@
     </section>
 
     <!-- Projects Section -->
+    <!-- Bagian Proyek Terbaru menampilkan grid kartu proyek -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title">Proyek Terbaru</h2>
@@ -118,6 +150,7 @@
     </section>
 
     <!-- Contact Section -->
+    <!-- Bagian Kontak dengan formulir -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Hubungi Saya</h2>
@@ -139,6 +172,7 @@
     </section>
 
     <!-- Footer -->
+    <!-- Bagian kaki halaman (footer) -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Portofolio Saya. Dibuat dengan <i class="fas fa-heart"></i> dan CSS, Tanpa JS.</p>
