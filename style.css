@@ -173,10 +173,17 @@ header .container {
     font-weight: 700;
     color: var(--text-primary);
     text-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+    
+
 }
 
 .logo span {
     color: var(--accent-primary);
+}
+
+.logo:hover {
+    color: var(--text-secondary);
+    text-shadow: 0 0 50px rgba(6, 182, 212, 0.6);
 }
 
 nav ul {
@@ -540,6 +547,27 @@ section {
     filter: drop-shadow(0 0 15px var(--accent-primary));
 }
 
+
+
+.project-card:hover .project-img .logo-iconn {
+    color: var(--accent-glow);
+}
+
+
+.project-card:hover .project-img .fa-desktop {
+    color: var(--accent-secondary);
+}
+
+.project-card:hover .project-img .fa-tablet-alt {
+    color: var(--accent-primary);
+}
+
+.project-card:hover .project-img .fa-mobile-alt {
+    color: var(--accent-glow);
+}
+
+
+
 .project-info {
     padding: 30px;
     position: relative;
@@ -573,8 +601,9 @@ section {
 .btn-small:hover {
     background: var(--accent-primary);
     color: white;
-    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    box-shadow: 50px 50px 50px 200px rgba(0, 217, 255, 0.4);
 }
+
 
 /* Contact Section */
 #contact {
