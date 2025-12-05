@@ -34,6 +34,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -492,6 +493,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
+    
 }
 
 .project-card {
@@ -509,9 +511,39 @@ section {
 .project-card:hover {
     transform: translateY(-15px) rotateX(5deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border-color: rgba(139, 92, 246, 0.5);
+    border-color: rgba(255, 37, 37, 0.5);
 }
 
+.projects-grid .yang-ke2:hover {
+    border-color: rgba(0, 174, 255, 0.5);
+}
+
+.projects-grid .yang-ke3:hover {
+    border-color: rgba(200, 0, 255, 0.5);
+}
+
+.project-card:hover .yang-ke3 .yang-ungu {
+    color: var(--accent-secondary);
+}
+
+.project-card .yang-ke3 .yang-ungu {
+    color: #94a3b8;
+}
+.project-card:hover .yang-ke2 .yang-biru {
+    color: var(--accent-primary);
+}
+
+.project-card .yang-ke2 .yang-biru {
+    color: #94a3b8;
+}
+
+.project-card:hover .project-info .yang-pink {
+    color: #fb0000;
+}
+
+.project-card .project-info .yang-pink {
+    color:#94a3b8
+}
 .project-img {
     height: 220px;
     background: #2d3748;
