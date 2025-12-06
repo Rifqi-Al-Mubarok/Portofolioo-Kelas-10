@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Preview ::before dan ::after</title>
+
+<style>
+.box {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background: #4CAF50;
+    border-radius: 10px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+/* Elemen merah di depan */
+.box::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 6px;
+    top: -12px;
+    left: -12px;
+}
+
+/* Elemen biru di belakang */
+.box::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #2196F3;
+    border-radius: 6px;
+    bottom: -12px;
+    right: -12px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+    Hasilnya!
+</div>
+
+</body>
+</html>

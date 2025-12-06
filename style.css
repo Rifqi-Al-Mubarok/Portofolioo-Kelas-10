@@ -355,14 +355,14 @@ nav a:hover::after {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    transition: var(--transition);
+    transition: var(--transition);     /* agar balik dengan tenang */
     border: var(--glass-border);
     backdrop-filter: blur(5px);
 }
 
 .social-links a:hover {
     background: var(--gradient);
-    transform: translateY(-5px) rotate(360deg);
+    transform: translateY(-5px) rotate(350deg) ;      /* translateY = agar keatas  rotate = agar berputar */
     box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
 }
 
@@ -609,10 +609,62 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
     font-size: 100px;
-    gap: 50px;
+    gap: 200px;
+    
 }
+
+.contact .contact-tele:hover {
+    filter: drop-shadow(0px 0px  100px rgb(0, 217, 255));
+    transform: scale(0.8);
+    transition: var(--transition);
+}
+
+.contact .contact-ig:hover {
+    transition: var(--transition);
+    transform: scale(0.8);
+    filter: drop-shadow(0px 0px 100px rgb(255, 0, 238));
+}
+
+.contact .contact-wa:hover {
+    transition: var(--transition);
+    transform: scale(0.8);
+    filter: drop-shadow(0px 0px 100px rgb(0, 255, 68));
+}
+
+.contact:hover a {
+    filter: drop-shadow(0px 0px  100px rgb(0, 94, 255));
+}
+
+.contact::before {
+    content: ;
+}
+
+.contact:hover .wa {
+    color: #25D366;
+}
+
+.contact:hover .tele {
+    width: 90px;
+    height: 90px;
+    color: #229ED9;
+    background-color: white;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.contact:hover .ig {
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    width: 115px;
+    height: 115px;
+    display: flex;
+    justify-content: center;    /* di tengah secara horizontal */
+    align-items: center;        /* di tengah secara vertikal */
+    border-radius: 20%;
+}
+
 
 .contact-text {
     color: var(--text-primary);
